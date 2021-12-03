@@ -94,7 +94,7 @@ body {
   z-index: 3;
 }
 #minLine2 {
-  height: 243px;
+  height: 210px;
   background-color: black;
   width: 10px;
   border-radius: 87%;
@@ -102,11 +102,11 @@ body {
 #minLine1 {
   display: flex;
   justify-content: center;
-  height: 80px;
+  height: 50px;
   background-color: black;
   width: 13px;
   border-radius: 80px 80px 80px 80px;
-  margin-top: -80px;
+  margin-top: -50px;
 }
 .minLineA {
   position: absolute;
