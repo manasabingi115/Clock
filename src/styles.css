@@ -66,8 +66,7 @@ body {
   position: absolute;
   border-radius: 50%;
   border: 5px solid;
-  z-index: 1;
-
+  z-index: 4;
   width: 13px;
   height: 13px;
   background: red;
@@ -92,6 +91,7 @@ body {
   position: absolute;
   transform-origin: center;
   animation: secLineA 60s linear infinite;
+  z-index: 3;
 }
 #minLine2 {
   height: 220px;
@@ -109,19 +109,30 @@ body {
   margin-top: -80px;
 }
 .minLineA {
-  position: fixed;
-  transform-origin: center;
+  position: absolute;
+  transform-origin: 50% 50% 0;
   animation: minLineA 3600s linear infinite;
-  margin-top: 30px;
+  z-index: 2;
+}
+.hourLine {
+  animation: hourLine1 43200s linear infinite;
+  position: absolute;
+  transform-origin: 50% 50% 0;
+  z-index: 1;
 }
 #hourLine1 {
-  position: absolute;
-  height: 160px;
+  height: 100px;
   background-color: black;
   width: 13px;
   border-radius: 8px 8px 80% 80%;
-  margin-top: 90px;
-  animation: hourLine1 43200s linear infinite;
+  display: flex;
+  justify-content: center;
+}
+#hourLine2 {
+  height: 170px;
+  width: 12px;
+  background-color: black;
+  border-radius: 80%;
 }
 
 .line1,
