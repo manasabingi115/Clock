@@ -1,4 +1,5 @@
 import "./styles.css";
+
 (function () {
   var time = new Date(),
     second = (time.getSeconds() / 60) * 360,
@@ -15,7 +16,7 @@ import "./styles.css";
         "deg);}to{transform:rotate(" +
         (minute + 360) +
         "deg);}}",
-      "@keyframes hourLine1{form{transform:rotate(" +
+      "@keyframes hourLine{form{transform:rotate(" +
         hour +
         "deg);}to{transform:rotate(" +
         (hour + 360) +
